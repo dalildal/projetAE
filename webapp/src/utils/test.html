@@ -1,0 +1,52 @@
+<div class="divForm">
+    <h5 id="pageTitle" class="visitPageTitle">Introduire une demande de visite</h5>
+    <form>
+        <div class="form-group">
+            <label for="plageHoraire">Plage horaire</label>
+            <input class="form-control" id="plageHoraire" type="text" placeholder="Plage horaire de la visite"
+                required="" />
+        </div>
+        <div class="form-group">
+            <label for="street">Adresse</label>
+            <input class="form-control" id="street" type="text" placeholder="Veuillez entrer votre adresse"
+                required="" />
+        </div>
+        <div class="form-group">
+            <label for="street_number">Numéro</label>
+            <input class="form-control" id="street_number" type="text" min="1"
+                placeholder="Veuillez entrer votre numéro" required="" />
+        </div>
+        <div class="form-group">
+            <label for="street_box">Boîte</label>
+            <input class="form-control" id="street_box" type="text" placeholder="Veuillez entrer votre boîte" />
+        </div>
+        <div class="form-group">
+            <label for="postal_code">Code postal</label>
+            <input class="form-control" id="postal_code" type="number" min="1"
+                placeholder="Veuillez entrer votre code postal" required="" />
+        </div>
+        <div class="form-group">
+            <label for="municipality">Commune</label>
+            <input class="form-control" id="municipality" type="text" placeholder="Veuillez entrer votre commune"
+                required="" />
+        </div>
+        <div class="form-group">
+            <label for="country">Pays</label>
+            <input class="form-control" id="country" type="text" placeholder="Veuillez entrer votre pays" required="" />
+        </div>
+        <br>
+        <div class="form-group">
+            <div class="drop-zone">
+                <span class="drop-zone__prompt">Glissez un fichier ou cliquer pour upload</span>
+                <input type="file" name="image" onchange="encodeImageToBase64(this)" class="drop-zone__input">
+            </div>
+        </div>
+        <br>
+        <div class="form-group" id="divSelect">
+        </div>
+        <br>
+        <button class="btn btn-primary" id="btn" type="enregistrer">Enregistrer</button>
+        <!-- Create an alert component with bootstrap that is not displayed by default-->
+        <div class="alert alert-danger mt-2 d-none" id="messageBoard"></div>
+    </form>
+</div>

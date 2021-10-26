@@ -1,0 +1,379 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* modern solution with flex to provide a sticky footer with no overlap with page div*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  /* modern solution with flex to provide a sticky footer with no overlap with page div*/
+  flex: 1;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/* CSS to deal with constraint validation styles */
+
+/*input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid green;
+}*/
+
+.title,
+.link {
+  width: 10rem;
+  word-wrap: break-word;
+}
+
+.duration,
+.budget {
+  width: 10rem;
+}
+
+.save,
+.delete {
+  width: 7rem;
+}
+
+td a {
+  display: block;
+}
+
+#tableFurniture td button {
+  width: 5rem !important;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.trVisiteConfirmee:hover {
+  background-color: rgb(185, 184, 184);
+}
+
+.trClient:hover{
+  background-color: rgb(185, 184, 184);
+}
+
+.trFurniture:hover{
+  background-color: rgb(185, 184, 184);
+}
+
+.pictureTable {
+  width: 50px;
+  height: 50px;
+}
+
+.aPictureTable {
+  width: 50px;
+}
+
+.divPicture {
+  display: inline-block;
+}
+
+.iconPicture {
+  display: inline-block;
+}
+
+#pictureList a {
+  display: block;
+}
+
+/* All Carousel */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+/* Carousel FurniturePage */
+
+.carousel-item img {
+  float: left;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+#caroussel {
+  display: block;
+  margin-left: 35%;
+}
+
+/* Carousel HomePage */
+#myCarousel {
+  margin: 0 3% 0 3%;
+}
+
+.furnitureDiv {
+  padding-bottom: 25px;
+}
+
+.furnitureDiv p {
+  text-align: center;
+}
+
+.topCarousel {
+  padding: 10px 10px 10px 10px;
+}
+
+.cardCarousel {
+  width: 100%;
+  height: 20rem;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.3);
+}
+
+.cardCarousel p {
+  margin: 0 5% 0 5%;
+}
+
+.imgCarousel {
+  float: center;
+  width: 100%;
+  height: 17rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+/*Drag and Drop visitRequest*/
+
+.drop-zone {
+  max-width: 200px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(199, 199, 199);
+  border: 4px dashed rgb(55, 55, 56);
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(199, 199, 199);
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background: rgb(41, 41, 41);
+  font-size: 14px;
+  text-align: center;
+}
+
+/*Drag and Drop furniturePage for Admin*/
+
+.drop-zone2 {
+  margin-left: 34.5%;
+  max-width: 150px;
+  height: 100px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 250;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(199, 199, 199);
+  border: 4px dashed rgb(55, 55, 56);
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(199, 199, 199);
+  background-size: cover;
+  position: relative;
+}
+.drop-zone__thumb2 {
+  width: 100%;
+  height: 210%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(199, 199, 199);
+  background-size: 100%;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background: rgb(41, 41, 41);
+  font-size: 10px;
+  text-align: center;
+}
+
+.drop-zone__thumb2::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background: rgb(41, 41, 41);
+  font-size: 10px;
+  text-align: center;
+}
+
+.mb-3 {
+  text-align: center;
+}
+
+/*Google Map*/
+#map {
+  height: 100%;
+  min-height: 240px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.toast {
+  margin: 20px 20px 20px 20px;
+  z-index: 1;
+}
+
+#cadre_adresse {
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid grey;
+}
+
+#footerText {
+  text-align: right;
+  margin-right: 9%;
+}
+
+@media (max-width: 768px) {
+  #footerText {
+    margin-right: 0;
+  }
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.5);
+  transition: transform .4s;
+}
+
+.nav-bar:hover {
+  transform: scale(1.05);
+  transition: transform .4s;
+}
+
+/*Form Style*/
+.formCase {
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 25%;
+}
+
+#formContent {
+  padding : 0 25px 25px 25px;
+  margin-bottom: 35px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  position: relative;
+  width: 90%;
+  background: #fff;
+}
+
+#formHeader {
+  margin: 30px 30px 25px 30px;
+  padding: 5% 5% 0 5%;
+  min-height: 40px;
+  text-align: center;
+}
+
+#formFooter {
+  border-top: 1px solid #dce8f1;
+  padding: 5% 0 5% 5%;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: #f6f6f6;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  min-width: 10px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 99999px
+}
+
+.badge.badge-outlined.badge-default {
+  border-color: #B0BEC5;
+  color: #B0BEC5
+}
+
+.imgFurniture {
+  border-radius: 10px;
+}
+
+textarea#description {
+  width: 100%;
+}
